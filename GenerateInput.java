@@ -9,7 +9,7 @@ public class GenerateInput {
 		for (int i = 0; i < 100; i++) {
 			BufferedWriter bw = new BufferedWriter(new FileWriter("input/" + i));
 			bw.write(Math.random() * 10 + "\n");
-			int numCount = (int) (Math.random() * 10000000);
+			int numCount = (int) (Math.random() * 200000);
 			String delim = "";
 			for (int j = 0; j < numCount; j++) {
 				bw.write(delim + Math.random() * 10);
